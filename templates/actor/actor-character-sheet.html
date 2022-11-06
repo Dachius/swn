@@ -24,17 +24,28 @@
         <div class="resource flex-group-center">
           <label for="data.experience.value" class="resource-label">XP</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="data.experience.value" value="{{data.experience.value}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="data.experience.max" value="{{data.experience.max}}" data-dtype="Number"/>
+            <input type="text" name="data.experience.value" value="{{data.experience.value}}" data-dtype="Number"/>
+            <span> / </span>
+            <input type="text" name="data.experience.max" value="{{data.experience.max}}" data-dtype="Number"/>
           </div>
         </div>
 
         <div class="resource flex-group-center">
           <label for="data.attributes.level.value" class="resource-label">Level</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="data.attributes.level.value" value="{{data.attributes.level.value}}" data-dtype="Number"/>
+            <input type="text" name="data.attributes.level.value" value="{{data.attributes.level.value}}" data-dtype="Number"/>
           </div>
+        </div>
+      </div>
+
+      <div class="resources grid grid-3col">
+        <div class="resource-content flexrow flex-group-center">
+          <label for="data.attributes.ac.value" class="resource-label">AC</label>
+          <input type="text" name="data.attributes.ac.value" value="{{data.attributes.ac.value}}" data-dtype="Number"/>
+        </div>
+        <div class="resource-content flexrow flex-group-center">
+          <label for="data.attributes.ac.value" class="resource-label">Attack Bonus</label>
+          <input type="text" name="data.attributes.attackbonus.value" value="{{data.attributes.attackbonus.value}}" data-dtype="Number"/>
         </div>
       </div>
     </div>

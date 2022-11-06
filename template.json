@@ -14,6 +14,12 @@
     "character": {
       "templates": ["base"],
       "attributes": {
+        "ac": {
+            "value": 0
+        },
+        "attackbonus": {
+            "value": 0
+        },
         "skillpoints": {
           "value": 0
         },
