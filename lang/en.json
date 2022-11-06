@@ -13,6 +13,12 @@
   "SWN.AbilityWisAbbr": "wis",
   "SWN.AbilityChaAbbr": "cha",
 
+  "SWN.SavePhysical": "Physical",
+  "SWN.SaveMental": "Mental",
+  "SWN.SaveEvasion": "Evasion",
+  "SWN.SaveTech": "Tech",
+  "SWN.SaveLuck": "Luck",
+
   "SWN.EffectCreate": "Create Effect",
   "SWN.EffectToggle": "Toggle Effect",
   "SWN.EffectEdit": "Edit Effect",

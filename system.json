@@ -1,7 +1,7 @@
 {
   "name": "swn",
   "title": "Stars Without Number",
-  "description": "The Stars Without Number system for FoundryVTT!",
+  "description": "Stars Without Number Original for FoundryVTT",
   "version": "1.0.0",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9",
@@ -17,10 +17,9 @@
       "path": "lang/en.json"
     }
   ],
-  "gridDistance": 5,
-  "gridUnits": "ft",
+  "gridDistance": 2,
+  "gridUnits": "m",
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power",
   "url": "",
   "manifest": "",
   "download": "",

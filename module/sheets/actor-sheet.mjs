@@ -71,6 +71,10 @@ export class SWNActorSheet extends ActorSheet {
     for (let [k, v] of Object.entries(context.data.abilities)) {
       v.label = game.i18n.localize(CONFIG.SWN.abilities[k]) ?? k;
     }
+    // Handle saves.
+    for (let [k, v] of Object.entries(context.data.attributes.saves)) {
+        v.label = game.i18n.localize(CONFIG.SWN.saves[k]) ?? k;
+    }
   }
 
   /**
@@ -84,8 +88,8 @@ export class SWNActorSheet extends ActorSheet {
     // Initialize containers.
     const gear = [];
     const features = [];
+    const skills = [];
     const spells = {
-      0: [],
       1: [],
       2: [],
       3: [],
@@ -108,6 +112,10 @@ export class SWNActorSheet extends ActorSheet {
       else if (i.type === 'feature') {
         features.push(i);
       }
+      // Append to skills.
+      else if (i.type === 'skill') {
+        skills.push(i);
+      }
       // Append to spells.
       else if (i.type === 'spell') {
         if (i.data.spellLevel != undefined) {
@@ -119,6 +127,7 @@ export class SWNActorSheet extends ActorSheet {
     // Assign and return
     context.gear = gear;
     context.features = features;
+    context.skills = skills;
     context.spells = spells;
    }
 

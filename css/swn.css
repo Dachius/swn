@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 /* Global styles */
+
 .window-app {
   font-family: "Roboto", sans-serif;
+  background-color: #444;
 }
 
 .rollable:hover, .rollable:focus {
@@ -288,7 +290,7 @@
 }
 
 .swn .tox .tox-editor-container {
-  background: #fff;
+  background: #AAA;
 }
 
 .swn .tox .tox-edit-area {
@@ -296,6 +298,7 @@
 }
 
 .swn .resource-label {
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -367,8 +370,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100px;
-  flex: 0 0 100px;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -435,6 +438,20 @@
   text-align: left;
 }
 
+.swn .item-weight {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  padding: 0 8px;
+}
+
+.swn .item-quantity {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  padding: 0 8px;
+}
+
 .swn .item-formula {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 200px;
@@ -453,4 +470,8 @@
 
 .swn .effects .item .effect-controls {
   border: none;
+}
+
+.centerText {
+  text-align: center;
 }

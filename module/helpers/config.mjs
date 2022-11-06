@@ -27,3 +27,11 @@ SWN.abilityAbbreviations = {
   "wis": "SWN.AbilityWisAbbr",
   "cha": "SWN.AbilityChaAbbr"
 };
+
+SWN.saves = {
+    "physical": "SWN.SavePhysical",
+    "mental": "SWN.SaveMental",
+    "evasion": "SWN.SaveEvasion",
+    "tech": "SWN.SaveTech",
+    "luck": "SWN.SaveLuck"
+  };

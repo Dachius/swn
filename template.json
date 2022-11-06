@@ -8,19 +8,42 @@
           "min": 0,
           "max": 10
         },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
-        },
         "biography": ""
       }
     },
     "character": {
       "templates": ["base"],
       "attributes": {
+        "skillpoints": {
+          "value": 0
+        },
+        "credits": {
+          "value": 0
+        },
+        "xp": {
+          "value": 0,
+          "min": 0,
+          "max": 0
+        },
         "level": {
           "value": 1
+        },
+        "saves": {
+          "physical": {
+            "value": 0
+          },
+          "mental": {
+            "value": 0
+          },
+          "evasion": {
+            "value": 0
+          },
+          "tech": {
+            "value": 0
+          },
+          "luck": {
+            "value": 0
+          }
         }
       },
       "abilities": {
@@ -50,20 +73,25 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["item", "feature", "skill", "spell"],
     "templates": {
       "base": {
         "description": ""
       }
-    },
+    },  
     "item": {
       "templates": ["base"],
       "quantity": 1,
       "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      "formula": ""
     },
     "feature": {
       "templates": ["base"]
+    },
+    "skill": {
+      "templates": ["base"],
+      "level": -1,
+      "formula": "2d6 + @item.level"
     },
     "spell": {
       "templates": ["base"],
